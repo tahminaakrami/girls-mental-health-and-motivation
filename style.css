@@ -397,3 +397,104 @@ img {
   justify-content: center;
   gap: 15px;
 }
+
+.quote-strip svg {
+  color: var(--gold);
+  flex-shrink: 0;
+}
+
+.quote-strip p {
+  font-size: 14px;
+}
+
+/* =========================
+   6. SECTION HEADING
+========================= */
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.section-heading h2,
+.about-content h2,
+.newsletter-content h2,
+.contact h2 {
+  color: var(--navy);
+  font-size: clamp(25px, 3vw, 35px);
+  line-height: 1.7;
+  margin-bottom: 10px;
+  font-weight: 800;
+}
+
+.section-heading p,
+.contact p {
+  font-size: 13px;
+  color: var(--text);
+}
+
+/* =========================
+   7. SERVICES
+========================= */
+
+.services {
+  background: var(--white);
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 18px;
+}
+
+.service-card {
+  text-align: center;
+  padding: 30px 17px;
+  background: var(--cream);
+  border: 1px solid var(--border);
+  border-radius: 15px;
+  transition: var(--transition);
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  background: var(--navy);
+  border-color: var(--navy);
+  box-shadow: var(--shadow);
+}
+
+.service-icon {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 17px;
+  background: var(--light-blue);
+  border-radius: 18px;
+  display: grid;
+  place-items: center;
+  color: var(--navy);
+  transition: var(--transition);
+}
+
+.service-icon svg {
+  width: 27px;
+  height: 27px;
+}
+
+.service-card:hover .service-icon {
+  background: var(--gold);
+  color: var(--navy);
+  transform: rotate(-8deg);
+}
+
+.service-card h3 {
+  font-size: 15px;
+  margin-bottom: 10px;
+  color: var(--navy);
+  transition: var(--transition);
+}
+
+.service-card p {
+  font-size: 11px;
+  color: var(--text);
+  line-height: 2.1;
+ 
