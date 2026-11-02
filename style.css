@@ -95,3 +95,106 @@ img {
   z-index: 1000;
   border-bottom: 1px solid rgba(23, 61, 91, 0.07);
 }
+.nav-wrapper {
+  min-height: 85px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+}
+
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.logo-icon {
+  width: 47px;
+  height: 47px;
+  border-radius: 15px;
+  background: var(--navy);
+  color: var(--gold);
+  display: grid;
+  place-items: center;
+  transition: var(--transition);
+}
+
+.logo-icon svg {
+  width: 26px;
+  height: 26px;
+}
+
+.logo:hover .logo-icon {
+  background: var(--gold);
+  color: var(--navy);
+  transform: rotate(-10deg);
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.4;
+}
+
+.logo-text strong {
+  color: var(--navy);
+  font-size: 19px;
+  font-weight: 800;
+  direction: ltr;
+  text-align: right;
+}
+
+.logo-text small {
+  font-size: 9px;
+  color: var(--text);
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.nav-link {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--dark);
+  transition: var(--transition);
+  position: relative;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: -9px;
+  right: 0;
+  width: 0;
+  height: 2px;
+  background: var(--gold);
+  transition: var(--transition);
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: var(--blue);
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 100%;
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+ 
