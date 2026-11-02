@@ -896,3 +896,105 @@ img {
 /* =========================
    13. BACK TO TOP
 ========================= */
+.back-to-top {
+  position: fixed;
+  bottom: 25px;
+  left: 25px;
+  width: 45px;
+  height: 45px;
+  background: var(--gold);
+  color: var(--navy);
+  border: none;
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(15px);
+  transition: var(--transition);
+  z-index: 900;
+}
+
+.back-to-top.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.back-to-top:hover {
+  background: var(--navy);
+  color: var(--white);
+}
+
+/* =========================
+   14. ANIMATIONS
+========================= */
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(35px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* =========================
+   15. TABLET
+========================= */
+
+@media (max-width: 992px) {
+
+  .navbar {
+    gap: 15px;
+  }
+
+  .nav-link {
+    font-size: 11px;
+  }
+
+  .hero-wrapper,
+  .about-wrapper {
+    gap: 40px;
+  }
+
+  .services-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .articles-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .newsletter-wrapper {
+    gap: 25px;
+  }
+}
+
+/* =========================
+   16. MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+  .section {
+    padding: 70px 0;
+  }
+
+  
