@@ -797,4 +797,102 @@ img {
 }
 
 .contact h2 {
- 
+  font-size: 25px;
+}
+
+/* =========================
+   12. FOOTER
+========================= */
+
+.footer {
+  background: #152e40;
+  color: var(--white);
+  padding: 65px 0 0;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  gap: 45px;
+  padding-bottom: 45px;
+}
+
+.footer-logo .logo-text strong {
+  color: var(--white);
+}
+
+.footer-logo .logo-text small {
+  color: #bbc9d0;
+}
+
+.footer-logo .logo-icon {
+  background: var(--gold);
+  color: var(--navy);
+}
+
+.footer-brand > p {
+  color: #bbc9d0;
+  font-size: 12px;
+  line-height: 2.3;
+  margin: 18px 0;
+  max-width: 290px;
+}
+
+.social-links {
+  display: flex;
+  gap: 10px;
+}
+
+.social-links a {
+  width: 36px;
+  height: 36px;
+  border: 1px solid #486174;
+  border-radius: 9px;
+  display: grid;
+  place-items: center;
+  color: var(--gold);
+  transition: var(--transition);
+}
+
+.social-links a:hover {
+  background: var(--gold);
+  color: var(--navy);
+  transform: translateY(-5px);
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.footer-column h3 {
+  font-size: 14px;
+  color: var(--gold);
+  margin-bottom: 8px;
+}
+
+.footer-column a {
+  color: #bbc9d0;
+  font-size: 12px;
+  transition: var(--transition);
+}
+
+.footer-column a:hover {
+  color: var(--gold);
+  transform: translateX(-4px);
+}
+
+.footer-bottom {
+  border-top: 1px solid #385064;
+  padding: 20px 5%;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  color: #bbc9d0;
+  font-size: 11px;
+}
+
+/* =========================
+   13. BACK TO TOP
+========================= */
