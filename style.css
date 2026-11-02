@@ -297,4 +297,103 @@ img {
 
 .floating-note {
   position: absolute;
- 
+  bottom: 35px;
+  right: -30px;
+  background: var(--white);
+  padding: 13px 19px;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--navy);
+  font-size: 13px;
+  font-weight: 700;
+  animation: float 3s ease-in-out infinite;
+}
+
+.floating-note svg {
+  color: var(--gold);
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: var(--blue);
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 17px;
+}
+
+.eyebrow svg {
+  width: 17px;
+  height: 17px;
+  color: var(--gold);
+}
+
+.hero-content h1 {
+  font-size: clamp(32px, 4vw, 51px);
+  font-weight: 800;
+  line-height: 1.6;
+  color: var(--navy);
+  margin-bottom: 20px;
+}
+
+.hero-content h1 span {
+  display: block;
+  color: var(--blue);
+}
+
+.hero-content > p {
+  font-size: 14px;
+  line-height: 2.4;
+  color: var(--text);
+  max-width: 520px;
+}
+
+.hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 13px;
+  margin-top: 28px;
+}
+
+.hero-trust {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  margin-top: 35px;
+  font-size: 12px;
+  color: var(--text);
+}
+
+.avatar-group {
+  display: flex;
+  direction: ltr;
+}
+
+.avatar-group img {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 3px solid var(--cream);
+  margin-left: -9px;
+}
+
+/* =========================
+   5. QUOTE
+========================= */
+
+.quote-strip {
+  background: var(--navy);
+  color: var(--white);
+  padding: 23px 0;
+}
+
+.quote-strip .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
