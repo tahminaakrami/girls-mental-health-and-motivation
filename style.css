@@ -497,4 +497,104 @@ img {
   font-size: 11px;
   color: var(--text);
   line-height: 2.1;
+  margin-bottom: 17px;
+  transition: var(--transition);
+}
+
+.service-card a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  color: var(--blue);
+  font-weight: 700;
+  transition: var(--transition);
+}
+
+.service-card:hover h3,
+.service-card:hover p,
+.service-card:hover a {
+  color: var(--white);
+}
+
+.service-card:hover a {
+  color: var(--gold);
+}
+
+/* =========================
+   8. ARTICLES
+========================= */
+
+.articles {
+  background: var(--cream);
+}
+
+.heading-row {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  text-align: right;
+}
+
+.heading-row p {
+  margin-top: 5px;
+}
+
+.text-link {
+  color: var(--blue);
+  display: inline-flex;
+  gap: 7px;
+  align-items: center;
+  font-size: 13px;
+  font-weight: 700;
+  transition: var(--transition);
+}
+
+.text-link:hover {
+  color: var(--gold);
+  transform: translateX(-5px);
+}
+
+.articles-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.article-card {
+  background: var(--white);
+  border-radius: 15px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  transition: var(--transition);
+}
+
+.article-card:hover {
+  transform: translateY(-9px);
+  box-shadow: var(--shadow);
+}
+
+.article-image {
+  height: 195px;
+  overflow: hidden;
+  position: relative;
+}
+
+.article-image img {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s ease;
+}
+
+.article-card:hover .article-image img {
+  transform: scale(1.1);
+}
+
+.article-tag {
+  position: absolute;
+  top: 13px;
+  right: 13px;
+  background: var(--cream);
+  color: var(--navy);
+  padding: 5px 12px;
  
