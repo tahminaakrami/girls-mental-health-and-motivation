@@ -197,4 +197,104 @@ img {
   align-items: center;
   justify-content: center;
   gap: 10px;
+  padding: 12px 23px;
+  border-radius: 9px;
+  border: 1px solid transparent;
+  font-size: 13px;
+  font-weight: 700;
+  transition: var(--transition);
+}
+
+.btn svg {
+  width: 17px;
+  height: 17px;
+}
+
+.btn-primary {
+  background: var(--navy);
+  color: var(--white);
+}
+
+.btn-primary:hover {
+  background: var(--gold);
+  color: var(--navy);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow);
+}
+
+.btn-outline {
+  border-color: var(--navy);
+  color: var(--navy);
+  background: transparent;
+}
+
+.btn-outline:hover {
+  background: var(--navy);
+  color: var(--white);
+  transform: translateY(-4px);
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--navy);
+}
+
+/* =========================
+   4. HERO
+========================= */
+
+.hero {
+  padding-top: 65px;
+  padding-bottom: 75px;
+}
+
+.hero-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 75px;
+}
+
+.hero-image {
+  position: relative;
+  height: 480px;
+  isolation: isolate;
+}
+
+.hero-image::before {
+  content: "";
+  position: absolute;
+  inset: 30px -20px -20px 35px;
+  background: var(--light-blue);
+  border-radius: 48% 48% 20px 20px;
+  z-index: -2;
+}
+
+.hero-image-decoration {
+  position: absolute;
+  top: -18px;
+  left: -18px;
+  width: 120px;
+  height: 120px;
+  border: 2px solid var(--gold);
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.hero-image > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 48% 48% 20px 20px;
+  object-position: center 35%;
+  transition: var(--transition);
+}
+
+.hero-image:hover > img {
+  transform: scale(1.025);
+}
+
+.floating-note {
+  position: absolute;
  
